@@ -18,12 +18,12 @@ public class DateAndTime_01_Test {
 	public void test_date() {
 
 		// TODO modifier les paramètres du constructeur pour que le test soit passant
-		Date date = new Date(0, 0, 0, 0, 0, 0);
+		Date date = new Date(117, 2, 24, 01, 02, 03);
 
 		assertThat(date.toString(), is("Fri Mar 24 01:02:03 CET 2017"));
 
 		// TODO modifier le jour de la date avec une méthode set pour que le test soit
-		// passant
+		date.setDate(25);
 
 		assertThat(date.toString(), is("Sat Mar 25 01:02:03 CET 2017"));
 	}
